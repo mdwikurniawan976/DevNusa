@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { BsStarHalf } from "react-icons/bs";
-import { FaStar } from "react-icons/fa";
+
 
 const Hero = () => {
   return (
