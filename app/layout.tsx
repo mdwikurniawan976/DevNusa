@@ -1,3 +1,4 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -7,14 +8,17 @@ import ResponsiveNav from "./components/Home/Navbar/ResponsiveNav";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // tambahkan sesuai kebutuhan
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-
+// ✅ Metadata: pastikan ditulis dengan benar
 export const metadata: Metadata = {
-  title: "DevNusa",
-  description: "Jasa aplikasi & website",
+  title: "Devnusa - Jasa Website & Aplikasi",
+  description: "Devnusa melayani pembuatan website, aplikasi mobile, dan desktop untuk UMKM dan instansi.",
+  verification: {
+    google: "ELN297p-nq5UOs9VPnf8Q1ComtRkejafxmvJa2ebiLg",
+  },
 };
 
 export default function RootLayout({
@@ -23,11 +27,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="id">
       <body className={`${poppins.className} antialiased`}>
         <ResponsiveNav />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
