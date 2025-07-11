@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+.bg-hero {
+  background-image: url('/images/2.jpg');
+ 
+}
+.primary{
+  color: #1B70E7;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* globals.css */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
